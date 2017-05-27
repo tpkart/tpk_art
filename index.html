@@ -8,81 +8,124 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="TPK - Thomas P. Karni - Music - Art">
 
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Caudex:700italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Cormorant+Garamond:400,500" rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href="https://cdn.rawgit.com/cc-icons/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+
+
 		<style type="text/css">
 			body {
-				font: 400 20px/1 'Source Sans Pro', Helvetica, Verdana, sans-serif;
-				background: #FAFAFA;
+				font: 400 20px/1 'Source Sans Pro', Verdana , Helvetica , sans-serif;
+				background: #FFFFFF;
 				color: black;
 				overflow-x: hidden;
 			}
 
-			a:link {text-decoration:none;}
 
-			
+			a:link {
+				text-decoration:none;
+			}
+
+
 			header {
 				position: relative;
 				overflow: hidden;
 			}
 
 
-			header p {
-				letter-spacing: 10px;	
-			}
-							
 			h1 {
-				font-size: 7.5em;
-				font-weight: 300;
-				margin-bottom:-30px;
+				font-size:6.5em;
+				font-weight:300;
+				margin-top:60px;
+				margin-bottom:0px;
+				line-height:0.65em;
 			}
 
-			
 
-			
-			.category-content {
+			p.about {
+			    font-size: 1.1em;
+				line-height:30px;
+				margin: 0 auto;
+			}
+
+
+			.icons-all {
+				margin-bottom:80px;
+			}
+
+			@media (min-width: 1000px) {
+				.icons-all {
+					position: absolute;
+					top:0px;
+					left:5px;
+				}
+			}
+
+			.icon {
+				color:rgba(51, 49, 144, 0.48);
+			}
+
+				.icon:hover {
+					color:rgba(144, 49, 49, 0.48);
+					cursor:pointer
+				}
+
+
+
+			h2 {
+				font-family: 'Cormorant Garamond', serif;
+				font-weight:500;
+				font-size: 2.15em;
+				margin-bottom:20px;
+				margin-top:0px;
+			}
+
+			p.description {
+			    font-size: 1.1em;
+				margin-bottom:40px;
+			}
+
+			.pad-bottom80 {
+				padding-bottom:80px;
+			}
+
+			.pad-bottom120 {
+				padding-bottom:120px;
+			}
+
+			.pad-bottom180 {
+				padding-bottom:180px;
+			}
+
+
+			.video-width {
 				margin: 0 auto;
 			}
 
 			@media (min-width: 992px) {
-				.category-content {
-				width: 80%;
+				.video-width {
+					width: 80%;
+				}
 			}
-			}
-			
+
 			.pop-content {
 				margin: 0 auto;
 			}
 
 			@media (min-width: 1100px) {
 				.pop-content {
-				width: 80%;
-			}
-			}
-
-			p.description {
-			    font-size: 1.15em;
-				padding-bottom: 10px;
-				border-bottom: 3px solid black;
-			}
-
-				@media (min-width: 768px) {				
-					.left-column {margin-left: 10px; float:left;}				
-					.right-column {margin-right: 10px; float:right;}
+					width: 80%;
 				}
-				
-			.videos {
-				margin: 0;
+			}
+
+
+
+
+
+			.video-center {
 				padding: 0;
-			}
-
-			.videos li {
-				margin-bottom: 20px;
-			}
-
-			.videos li:last-child {
-				margin-bottom: 40px;
+				margin: 0 auto;
 			}
 
 			.videoWrapper {
@@ -91,7 +134,7 @@
 				padding-top: 25px;
 				height: 0;
 			}
-			
+
 			.videoWrapper iframe {
 				position: absolute;
 				top: 0;
@@ -99,122 +142,248 @@
 				width: 100%;
 				height: 100%;
 			}
-			
-			
-			.icon {
-			color:rgba(51, 49, 144, 0.48);
+
+
+			.ccdesign {
+				color: hsla(241, 49%, 60%, 1);
+				font-size:25px;
+				vertical-align: -3px;
+			}
+
+				.ccdesign:hover {
+					color: hsla(28, 60%, 55%, 1);
+					cursor:pointer
+				}
+
+			.highlight {
+				background-color: hsla(231, 45%, 69%, 1);
+				color:white;
+				padding: 0px 5px;
+				border-radius: 10px;	-moz-border-radius: 10px;-webkit-border-radius: 10px;-o-border-radius: 10px;-ms-border-radius: 10px;
 			}
 			
-				.icon:hover {
-				color:rgba(144, 49, 49, 0.48);
-				cursor:pointer
-				}
 			
-			.font-music {
-			font-family: 'Caudex', serif; font-size:25px;
+			.ttpos {
+				position: relative;
+				}
+
+
+			.ttpos .tt {
+				visibility: hidden;
+				width: 260px;
+				background-color: hsla(318, 25%, 95%, 1);
+				font-size: 0.7em;
+				line-height:20px;
+				color: black;
+				text-align: center;
+				padding:0px 0px;
+				margin:0 auto;
+				border-radius: 10px;
+				border:1px solid black;
+				position: absolute;
+				z-index: 1;
+				left: 105%; 
+				top: 50%;
+				transform: translateY(-50%);
+			}
+
+			.ttpos:hover .tt {
+				visibility: visible;
 			}
 		</style>
 	</head>
+	
 	<body>
-		<div class="container-fluid">
+
+	<div class="container-fluid">
 
 			<header>
-				<h1 class="text-center">TPK</h1>
-				<p class="text-center">Tom(Thomas) P. Karni</p>
+				<h1 class="pad-bottom80 text-center">TPK</h1>
 			</header>
 
-			<div class="icon-all text-center">
-				<a href="https://www.youtube.com/channel/UC7jt0bb0C34dZwCGpUjiv-A">
-					<i class="icon fa fa-youtube-square fa-4x"></i>
-				</a>
-				<a href="https://soundcloud.com/thomaspkarni">
-					<i class="icon fa fa-soundcloud fa-4x"></i>
-				</a>
-				<a href="https://www.facebook.com/thomaspkarni">
-					<i class="icon fa fa-facebook-square fa-4x"></i>
-				</a>
-				<a href="https://www.dropbox.com/sh/ez7dwm043whk6jp/AABvsNeXVwWKC4IyjhGRClura?dl=0">
-					<i class="icon fa fa-dropbox fa-4x"></i>
-				</a>
-				<a href="mailto:thomaspkarni@gmail.com">
-					<i class="icon fa fa-envelope-square fa-4x"></i>
-				</a>
-			</div>
-			
-			<div class="row">
+			<div class="pad-bottom120 row">
+				<div class="text-center col-sm-12">
 
-				<div class="category-column col-sm-1">
+					<p class="about">
+					Welcome<br>
+					I'm TPK (or Thomas P. Karni)<br>
+					I make music & art<br>
+					All music here is free<br>
+					U r welcome to use it in your noncommercial projects<br>
+					Please add the highlighted attribution:<br>
+					<span class="highlight">Music by: TPK.world - chosen track name</span><br>
+					Music is licensed under
+						<a class="ttpos" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+							<span class="tt">
+								Creative Commons<br>Attribution-NonCommercial 4.0
+							</span>
+							<i class="cc cc-by-nc cc-1x ccdesign"></i>
+						</a><br>
+							#FreeCulture #OpenSourceMusic
+					</p>
+
 				</div>
-			
-			
-				<div class="category-column col-sm-4">
-					<div class="category-content left-column">
-						<h2 class="title text-center">MedicineArt</h2>
-						<p class="description text-justify">
-							<span class="font-music">
-							{Preludes}</span>
-							Spiritual Music - Modern & Ancient - Rhythms, Melodies & Timbres
+			</div>
+
+
+				<div class="icons-all text-center">
+							<a href="https://www.youtube.com/channel/UC7jt0bb0C34dZwCGpUjiv-A">
+								<i class="icon fa fa-youtube-square fa-3x"></i>
+							</a>
+							<a href="https://soundcloud.com/thomaspkarni">
+								<i class="icon fa fa-soundcloud fa-3x"></i>
+							</a>
+							<a href="https://www.dropbox.com/sh/ez7dwm043whk6jp/AABvsNeXVwWKC4IyjhGRClura?dl=0">
+								<i class="icon fa fa-dropbox fa-3x"></i>
+							</a>
+							<a href="https://www.facebook.com/thomaspkarni">
+								<i class="icon fa fa-facebook-square fa-3x"></i>
+							</a>
+				</div>
+
+
+
+
+			<div class="row">
+				<div class="text-center col-sm-12">
+
+						<h2>MedicineArt</h2>
+
+						<p class="description">
+						Preludes - Spiritual Music - Modern & Ancient - Rhythms, Melodies & Timbres
 						</p>
-						<ul class="videos list-unstyled">
+				</div>
+			</div>
+
+			<div class="pad-bottom180 row">
+
+				<div class="col-sm-1"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
 							<li class="videoWrapper">
 								<iframe src="https://www.youtube.com/embed/SjwQID8V_xw" frameborder="0" allowfullscreen></iframe>
 							</li>
+						</ul>
+				</div>
+
+				<div class="col-sm-2"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
 							<li class="videoWrapper">
 								<iframe src="https://www.youtube.com/embed/vRku-Pqzjmo" frameborder="0" allowfullscreen></iframe>
-							</li>							
+							</li>
 						</ul>
-					</div>
 				</div>
-				
-				<div class="category-column col-sm-2">
-				</div>
-				
-			
-				<div class="category-column col-sm-4">
-					<div class="category-content right-column">
-						<h2 class="title text-center">MelodiesInForm</h2>
-						<p class="description text-justify">
-							<span class="font-music">
-							{Etudes}</span>
-							Here I exercise techniques & explore concepts that I'm interested in
+
+				<div class="col-sm-1"></div>
+
+			</div>
+
+
+
+
+			<div class="row">
+				<div class="text-center col-sm-12">
+
+						<h2 class="title">MelodiesInForm Etudes</h2>
+
+						<p class="description">
+						Here I exercise techniques & explore concepts that I'm interested in
 						</p>
-						<ul class="videos list-unstyled">
+				</div>
+			</div>
+
+			<div class="pad-bottom180 row">
+
+				<div class="col-sm-1"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
 							<li class="videoWrapper">
 								<iframe src="https://www.youtube.com/embed/2HyknaWRKTM" frameborder="0" allowfullscreen></iframe>
 							</li>
+						</ul>
+				</div>
+
+				<div class="col-sm-2"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
 							<li class="videoWrapper">
 								<iframe src="https://www.youtube.com/embed/ax6JXCkWT4s" frameborder="0" allowfullscreen></iframe>
 							</li>
 						</ul>
-					</div>
 				</div>
-				
-				<div class="category-column col-sm-1">
-				</div>
-				
-			</div>	
-			
+
+				<div class="col-sm-1"></div>
+
+			</div>
+
+
+
+
 			<div class="row">
-			
+				<div class="text-center col-sm-12">
+
+						<h2>VideoDance</h2>
+
+						<p class="description">
+						</p>
+				</div>
+			</div>
+
+			<div class="pad-bottom180 row">
+
+				<div class="col-sm-1"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
+							<li class="videoWrapper">
+								<iframe src="https://www.youtube.com/embed/VxcV33NdAts" frameborder="0" allowfullscreen></iframe>
+							</li>
+						</ul>
+				</div>
+
+				<div class="col-sm-2"></div>
+
+				<div class="col-sm-4">
+						<ul class="video-width video-center list-unstyled">
+							<li class="videoWrapper">
+								<iframe src="https://www.youtube.com/embed/62KkG4ozYrA" frameborder="0" allowfullscreen></iframe>
+							</li>
+						</ul>
+				</div>
+
+				<div class="col-sm-1"></div>
+
+			</div>
+
+
+
+
+			<div class="row">
+
 				<div class="category-column col-sm-2"></div>
-				
+
 				<div class="category-column col-sm-8">
 					<div class="pop-content">
-						<h2 class="title text-center">Pop Paradiso</h2>
+						<h2 class="title text-center">GlitchHop</h2>
 						<p class="description text-justify"></p>
-						<ul class="videos list-unstyled">
+						<ul class="video-center list-unstyled">
 							<li class="videoWrapper">
 								<iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/84757970&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 							</li>
-							
+
 						</ul>
 					</div>
-				</div>	
-				<div class="category-column col-sm-2"></div>				
+				</div>
+				<div class="category-column col-sm-2"></div>
 			</div>
-			
-		</div>
-		
+
+	</div>
+
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -224,6 +393,6 @@
 		  ga('create', 'UA-85444620-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
-		
+
 	</body>
 </html>
